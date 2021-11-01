@@ -1,0 +1,91 @@
+:root{
+    --dark-blue: rgb(19, 20, 44);
+    --light-blue: #2a5069;
+    --green: #176b52;
+    --bg-1: rgb(174, 197, 159) 0%;
+    --bg-2: rgb(134, 214, 173) 100%;
+
+
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(0deg, var(--bg-1), var(--bg-2)) no-repeat;
+    height: 100%;
+    background-size: cover;
+
+}
+h1{
+    font-size: 44px;
+    /*text-shadow: 32px rgb(9, 6, 41);*/
+    color: var(--light-blue);
+    text-shadow: 1px 1px 1px var(--dark-blue),
+    -1px -1px 1px var(--dark-blue),
+    1px -1px 1px var(--dark-blue),
+    -1px 1px 1px var(--dark-blue);
+}
+
+.body {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    text-align: center;
+}
+
+.value {
+    font-size: 28px;
+}
+
+.button {
+    font-size: x-large;
+    color: whitesmoke;
+    border-radius: 8%;
+    border-width: 2px;
+    border-color: var(--dark-blue);
+    background-color: var(--light-blue);
+    text-align: center;
+    text-anchor: middle;
+}
+
+.svg {
+    display: block;
+    margin: auto;
+    scale: 1;
+}
+
+.circle{
+    fill-opacity:0;
+    stroke: var(--green);
+    stroke-width:14px;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray: none;
+    stroke-opacity:1;
+    paint-order:normal;
+}
+.hand {
+    opacity:1;
+    fill: var(--light-blue);
+    fill-opacity:1;
+    stroke: var(--dark-blue);
+    stroke-width: 6px;
+    stroke-opacity: 0.8;
+    paint-order:normal;
+    transform-origin: center;
+}
+
+@keyframes hand-anim-1 {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes hand-anim-2 {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}

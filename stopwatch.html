@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    
+</head>
+<body class="body">
+    <div class="div">
+        <h1 class="header">Stopwatch</h1>
+        
+        <div class="buttons">
+            <button class="button" name="start" type="button" onclick="startStopwatch();">start</button>
+            <button class="button" name="stop" type="button" onclick="stopStopwatch();">stop</button>
+            <button class="button" name="reset" type="button" onclick="resetStopwatch();">reset</button>
+        </div>
+        <br>
+        
+    </div>
+    
+
+    <svg width="400" height="400" class="svg">
+        <circle cx="200" cy="200" r="150"
+            class="circle" id="circle"
+        />
+        <text x="50%" y="50%" class="value" id="value" text-anchor="middle">
+            00:00:000
+        </text>
+        <circle cx="200" cy="50" r="10"
+            class="hand" id="hand"
+        />
+    </svg>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
